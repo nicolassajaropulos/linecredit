@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  linecredit:
+    image: tribal/linecredit:latest
+    mem_limit: 700m
+    ports:
+      - "8080:8080"
+    networks:
+      - tribal-network
+
+networks:
+  tribal-network:
